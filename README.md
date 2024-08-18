@@ -8,11 +8,6 @@
 
 虚谷数据库Python接口驱动包
 
-| win x64            | linux x64          |
-|--------------------|--------------------|
-| :heavy_check_mark: | :heavy_check_mark: |
-| :heavy_check_mark: | :heavy_check_mark: |
-
 ### 安装
 
 ```bash
