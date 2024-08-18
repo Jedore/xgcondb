@@ -4,6 +4,13 @@
 @brief: auto-build
 """
 
+# 1. python auto_build.py
+# 2. create docker container quay.mirrors.ustc.edu.cn/pypa/manylinux2014_x86_64:2023-10-22-409125c
+# 3. export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<libxugusql.so path>
+# 4. auditwheel repair -w . <linux whl>
+
+# Same method not support for python 3.6/3.7
+
 import time
 import os
 import shutil

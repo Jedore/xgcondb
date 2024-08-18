@@ -7,11 +7,12 @@ import xgcondb as xg
 
 def connect():
     try:
-        xg.connect(host='127.0.0.1',
+        conn = xg.connect(host='127.0.0.1',
                    port=5138,
                    database='SYSTEM',
                    user='SYSDBA',
                    password='SYSDBA')
+        conn.close()
         print('Succeeded!')
         return True
     except Exception as e:
