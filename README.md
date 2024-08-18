@@ -15,5 +15,25 @@ pip install xgcondb -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host=p
 ```
 
 ### 使用
+```python
+import xgcondb as xg
+
+
+def connect():
+    try:
+        conn = xg.connect(host='127.0.0.1',
+                          port=5138,
+                          database='SYSTEM',
+                          user='SYSDBA',
+                          password='SYSDBA')
+        conn.close()
+        print('Succeeded!')
+    except Exception as e:
+        print('Failed!', e)
+
+
+if __name__ == '__main__':
+    connect()
+```
 
 具体使用参考官方链接 [Python标准接口开发指南](https://help.xugudb.com/documents/python-development-guide/program-guide-01)
