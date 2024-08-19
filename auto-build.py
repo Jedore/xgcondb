@@ -69,9 +69,14 @@ def re_rag(platform: str, python_version: str):
     elif platform == 'linux-arm64':
         plat = 'manylinux2014_aarch64.manylinux_2_17_aarch64'
 
+    if python_version in ('36', '37') and platform == 'win-x64':
+        abi_tag = f'cp{python_version}m'
+    else:
+        abi_tag = f'cp{python_version}'
+
     cmd = (f'wheel tags --remove '
            f'--platform-tag {plat} '
-           f'--abi-tag cp{python_version} '
+           f'--abi-tag  {abi_tag} '
            f'--python-tag cp{python_version} '
            f'dist/xgcondb-{__about__.__version__}-py3-none-any.whl')
     os.system(cmd)
