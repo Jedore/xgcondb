@@ -69,7 +69,7 @@ def re_rag(platform: str, python_version: str):
     elif platform == 'linux-arm64':
         plat = 'manylinux2014_aarch64.manylinux_2_17_aarch64'
 
-    if python_version in ('36', '37') and platform == 'win-x64':
+    if python_version in ('36', '37'):
         abi_tag = f'cp{python_version}m'
     else:
         abi_tag = f'cp{python_version}'
