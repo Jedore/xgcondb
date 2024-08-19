@@ -7,7 +7,8 @@
 # 1. python auto_build.py
 # 2. create docker container quay.mirrors.ustc.edu.cn/pypa/manylinux2014_x86_64:2023-10-22-409125c
 # 3. export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<libxugusql.so path>
-# 4. auditwheel repair -w . <linux whl>
+# 4. auditwheel repair -w . <linux x86_64 whl>
+# linux arm64 whl same to upper, repaired on linux aarch64 or quay.io/pypa/manylinux2014_aarch64
 
 # Same method not support for python 3.6/3.7
 
@@ -34,7 +35,7 @@ def prepare(platform: str, python_version: str):
         if python_version in ('36', '37'):
             python_version += 'm'
         files.extend([
-            'libxugusql.so',
+            # 'libxugusql.so',
             '_pyxgdb.so',
             f'_pyxgdb.cpython-{python_version}-x86_64-linux-gnu.so',
         ])
@@ -42,7 +43,7 @@ def prepare(platform: str, python_version: str):
         if python_version in ('36', '37'):
             python_version += 'm'
         files.extend([
-            'libxugusql.so',
+            # 'libxugusql.so',
             '_pyxgdb.so',
             f'_pyxgdb.cpython-{python_version}-aarch64-linux-gnu.so',
         ])
