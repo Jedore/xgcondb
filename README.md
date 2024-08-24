@@ -8,8 +8,9 @@
 <a href="https://pepy.tech/project/xgcondb" ><img src="https://static.pepy.tech/badge/xgcondb" /></a>
 <a href="#" ><img src="https://flat.badgen.net/badge/test/pass/green?icon=github" /></a>
 
+XuGu Database Python Driver
 
-虚谷数据库Python接口驱动包
+虚谷数据库Python接口驱动
 
 ### 安装
 
