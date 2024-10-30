@@ -1,5 +1,5 @@
 """
-@Author: jedor(https://github.com/jedore)
+@Author: Jedore(https://github.com/jedore)
 @Date: 17/08/2024
 @brief: auto-build
 """
@@ -20,7 +20,7 @@ from src.xgcondb import __about__
 
 driver_base = Path('driver')
 platforms = ('win-x64', 'linux-x64', 'linux-arm64')
-pythons = ('36', '37', '38', '39')
+pythons = ('36', '37', '38', '39', '310', '311')
 package_dir = Path('src/xgcondb')
 
 
@@ -88,6 +88,9 @@ def main():
     print('Start auto build...')
     for platform in platforms:
         for py in pythons:
+            if platform == 'linux-arm64' and py in ('310', '311'):
+                continue
+
             print(f'> Platform {platform}, Python {py}')
             clean()
             prepare(platform, py)
