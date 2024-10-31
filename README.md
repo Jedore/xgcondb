@@ -3,8 +3,8 @@
 <a href="#"><img src="https://flat.badgen.net/badge/os/win-x86_64/cyan?icon=windows" /></a>
 <a href="#"><img src="https://img.shields.io/badge/os-linux_x86_64-white?style=flat-square&logo=linux&logoColor=white&color=rgb(35%2C189%2C204)" /></a>
 <a href="#"><img src="https://img.shields.io/badge/os-linux_arm64-white?style=flat-square&logo=linux&logoColor=white&color=rgb(35%2C189%2C204)" /></a>
-<a href="#"><img src="https://flat.badgen.net/badge/python/3.6|3.7|3.8|3.9/blue" /></a>
-<a href="#"><img src="https://flat.badgen.net/badge/pypi/v0.0.1/blue" /></a>
+<a href="#"><img src="https://flat.badgen.net/badge/python/3.6|3.7|3.8|3.9|3.10|3.11/blue" /></a>
+<a href="#"><img src="https://flat.badgen.net/badge/pypi/v1.0.0/blue" /></a>
 <a href="https://pepy.tech/project/xgcondb" ><img src="https://static.pepy.tech/badge/xgcondb" /></a>
 <a href="#" ><img src="https://flat.badgen.net/badge/test/pass/green?icon=github" /></a>
 
